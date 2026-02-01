@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple Cell Phone - iPhones Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
+body{background:#f6f7fb;color:#111;}
+
+/* HEADER */
+header{
+background:#000;color:#fff;padding:15px 20px;
+display:flex;justify-content:space-between;align-items:center;
+position:sticky;top:0;z-index:1000;
+}
+header a{color:#fff;text-decoration:none;font-weight:600;margin-left:15px;}
+
+/* HERO */
+.hero{
+background:linear-gradient(120deg,#000,#222);
+color:#fff;text-align:center;padding:90px 20px;
+}
+.hero h1{font-size:40px;margin-bottom:10px;}
+.hero p{opacity:.85;margin-bottom:25px;font-size:18px;}
+.btn{
+background:#fff;color:#000;padding:14px 28px;
+border-radius:30px;text-decoration:none;font-weight:600;
+}
+
+/* SEÇÕES */
+.section{padding:70px 20px;max-width:1100px;margin:auto;}
+.title{text-align:center;font-size:30px;margin-bottom:35px;font-weight:700;}
+
+/* CARROSSEL */
+.carousel{
+position:relative;overflow:hidden;border-radius:15px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+.carousel img{
+width:100%;display:none;
+}
+.carousel img.active{display:block;}
+.carousel-btn{
+position:absolute;top:50%;transform:translateY(-50%);
+background:rgba(0,0,0,.5);color:#fff;border:none;
+padding:10px 15px;font-size:20px;cursor:pointer;
+}
+.prev{left:10px;}
+.next{right:10px;}
+
+/* PROVA SOCIAL */
+.stats{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;text-align:center;
+}
+.stat{
+background:#000;color:#fff;padding:30px;border-radius:14px;
+}
+.stat h3{font-size:32px;}
+.stat p{opacity:.8;}
+
+/* SOBRE */
+.sobre{
+display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;
+}
+.sobre img{width:100%;border-radius:14px;}
+
+/* DEPOIMENTOS */
+.depoimentos{
+background:#000;color:#fff;padding:70px 20px;
+}
+.depoimento{
+background:#111;border-radius:14px;padding:22px;font-size:15px;
+}
+
+/* QR CODE */
+.qr{
+display:flex;flex-wrap:wrap;gap:40px;justify-content:center;text-align:center;
+}
+.qr img{width:160px;border-radius:12px;}
+
+/* FOOTER */
+footer{
+background:#000;color:#fff;text-align:center;padding:25px;margin-top:50px;
+font-size:14px;
+}
+
+/* BOTÕES FLUTUANTES */
+.float-btn{
+position:fixed;right:15px;bottom:20px;display:flex;flex-direction:column;gap:12px;
+}
+.float-btn a{
+width:55px;height:55px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+color:#fff;font-size:22px;text-decoration:none;
+}
+.whatsapp{background:#25D366;}
+.instagram{background:#E1306C;}
+
+@media(max-width:800px){
+.sobre{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div><strong>Apple Cell Phone</strong></div>
+<div>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</div>
+</header>
+
+<section class="hero">
+<h1>iPhones & Acessórios Premium</h1>
+<p>Mais de 5 anos entregando confiança, qualidade e tecnologia.</p>
+<a href="#contato" class="btn">Falar com Especialista</a>
+</section>
+
+<!-- CARROSSEL -->
+<section class="section">
+<h2 class="title">Nossa Loja</h2>
+<div class="carousel">
+<img src="IMG_9603.jpeg" class="active">
+<img src="IMG_9605.jpeg">
+<img src="IMG_9606.jpeg">
+<img src="IMG_9786.jpeg">
+<button class="carousel-btn prev">‹</button>
+<button class="carousel-btn next">›</button>
+</div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="section">
+<div class="stats">
+<div class="stat"><h3>+2.000</h3><p>Clientes atendidos</p></div>
+<div class="stat"><h3>+5</h3><p>Anos de experiência</p></div>
+<div class="stat"><h3>100%</h3><p>Satisfação garantida</p></div>
+<div class="stat"><h3>+350</h3><p>iPhones vendidos</p></div>
+</div>
+</section>
+
+<!-- SOBRE -->
+<section class="section" id="sobre">
+<h2 class="title">Sobre a Apple Cell Phone</h2>
+<div class="sobre">
+<div>
+<p><strong>Apple Cell Phone</strong> é especialista em iPhones e acessórios premium, oferecendo produtos originais, garantia e atendimento profissional.</p>
+<br>
+<p>Somos referência em qualidade, confiança e suporte, atendendo clientes e lojistas com excelência.</p>
+<br>
+<p><strong>Endereço:</strong><br>
+Rua Anatoli Liandov, nº 62<br>
+Jardim Vera Cruz</p>
+</div>
+<img src="IMG_9603.jpeg">
+</div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos">
+<h2 class="title">O que nossos clientes dizem</h2>
+<div class="stats">
+<div class="depoimento">⭐⭐⭐⭐⭐<br>“Loja confiável e atendimento top!”</div>
+<div class="depoimento">⭐⭐⭐⭐⭐<br>“iPhone original e entrega rápida.”</div>
+<div class="depoimento">⭐⭐⭐⭐⭐<br>“Recomendo para todos!”</div>
+</div>
+</section>
+
+<!-- QR CODE -->
+<section class="section" id="contato">
+<h2 class="title">Contato & Redes Sociais</h2>
+<div class="qr">
+<div>
+<p>Instagram</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://instagram.com/applecellphone2">
+</div>
+<div>
+<p>WhatsApp CEO</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/5511985662625">
+</div>
+</div>
+
+<br><br>
+<h3 style="text-align:center">WhatsApp Profissional</h3>
+<p style="text-align:center;margin-top:10px">
+CEO: (11) 98566-2625<br>
+Vendas: (11) 95447-1918<br>
+ADM: (11) 97699-7380<br>
+Gerente Comercial: (11) 96339-7401
+</p>
+</section>
+
+<footer>
+Apple Cell Phone © 2026 • Loja Premium de iPhones
+</footer>
+
+<!-- BOTÕES FLUTUANTES -->
+<div class="float-btn">
+<a class="whatsapp" href="https://wa.me/5511985662625" target="_blank">💬</a>
+<a class="instagram" href="https://instagram.com/applecellphone2" target="_blank">📸</a>
+</div>
+
+<script>
+let index = 0;
+const imgs = document.querySelectorAll(".carousel img");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+function showImg(i){
+imgs.forEach(img=>img.classList.remove("active"));
+imgs[i].classList.add("active");
+}
+
+prev.onclick = ()=>{index = (index-1+imgs.length)%imgs.length;showImg(index);}
+next.onclick = ()=>{index = (index+1)%imgs.length;showImg(index);}
+
+setInterval(()=>{index=(index+1)%imgs.length;showImg(index);},4000);
+</script>
+
+</body>
+</html>
